@@ -1,0 +1,497 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Trung Kien
+ID: s3878260
+Acknowledgement: Lecture, Tutorial, www.w3schools.com, stackoverflow.com
+*/
+
+body {
+    background-image: linear-gradient(#c7feff,#fde6f8 );
+    margin: 0px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.header {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#ffcce3,#FFE5F1);
+    flex-direction: column;
+}
+
+.icon {
+    display: inline-block;
+    height: 0px;
+    padding-left: 15px;
+    
+}
+
+.overlay {
+    position:relative;
+    bottom: 100px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.icon:hover #close-book{
+    transition: .5s ease;
+    opacity: 0;
+}  
+
+.icon:hover .overlay {
+    opacity: 1;
+}
+
+.icon-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px 0px 0px 0px;
+}
+
+#store-name {
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans Extrabold", cursive;
+    animation-name: title;
+    animation-duration: 3s;
+}
+
+@keyframes title {
+    0%   {color: #c395ff;}
+    25%  {color: #9ebbff;}
+    50%  {color: #a3dfff;}
+    75%  {color: #b3feff;}
+    100% {color: #e8ffff;}
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff5d5;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.navbar a {
+    color: #4A148C;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #E61E2A;
+    display: none;
+}
+.navbar li:hover {
+    transition: .5s ease;
+    padding: 15px;
+    background-color: #FFDCEC;
+    
+}
+
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #fff5d5;
+    display: none;
+}
+
+.category {
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.books-list {
+    display: flex;
+    flex-direction: row;
+    justify-items:flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.book {
+    margin: 10px;
+    width: 240px;
+    height: auto;
+    float: left;
+}
+
+#book-img:hover {
+    transition: .5s ease;
+    width: 240px;
+    height: 340px;
+}
+
+.name-price{
+    padding-left: 20px;
+    color: #fff;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF5D5;
+    margin: 0px;
+    padding: 20px;
+}
+
+.nav-footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-footer li {
+    padding-left: 10px;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-footer a:hover {
+    color: #7C83FD;
+}
+
+.category a {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 15px;
+    font-size: 32px;
+}
+
+.category a:hover {
+    font-size: 36px;
+    transition: .5s ease;
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 30px;
+    color: #000;
+}
+
+h4 {
+    align-self: center;
+    padding-top: 25px;
+    margin: 15px;
+}
+
+h5 {
+    padding: 15px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+h6 {
+    background-color: #defcfe;
+    color: #4b1a88;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+}
+
+#return-bt {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #7C83FD;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+}
+
+#return-bt:hover {
+    transition: .5s ease;
+    width: 70px;
+    height: 70px;
+    bottom: 5px;
+    right: 5px;
+}
+
+.submit-bt {
+    width: fit-content;
+}
+
+.reset-bt {
+    position: relative;
+    bottom: 22px;
+    left: 70px;
+}
+
+.line-1 {
+    display: flex;
+    border: none;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 5%;
+}
+
+.line-2 {   
+    display: flex;
+    border: none;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.fiction {
+    padding: 23px 0px;
+    background-image: linear-gradient(to bottom right, #7C83FD, #82ece5);
+}
+
+.non-fiction {
+    background-image: linear-gradient(to bottom right, #FFACAC, #e5d29e);
+}
+
+.contact-us {
+    background-image: linear-gradient(to bottom right, #71EFA3, #b4e9db);
+}
+
+.vid-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+#books-img {
+    border-radius: 5px;
+}
+
+.custom-h2 {
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.form-section {
+    margin: 40px;
+    padding: 50px;
+    font-size: large;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    padding-left: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #7C83FD;
+}
+
+.book-img-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-img-section {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 20px;
+}
+
+.main-img {
+    border: 20px;    
+    max-width: 100%;
+    height: auto;
+}
+
+.small-img-section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0px 20px;
+}
+
+.small-img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.purchase-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.book-info {
+    list-style: none;
+    display: flex;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+.book-info li {
+    margin-right: 20px;
+}
+
+.add-to-cart-bt {
+    max-width: fit-content;
+    background-color: #f68a81;
+    color: #fff;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: orange;
+    font-size: 20px;
+}
+
+.description-section {
+    background: #fff;
+    padding: 20px;
+}
+
+.description-info {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.description-info li {
+    margin-top: 10px;
+}
+
+@media (max-width: 960px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5px 5px;
+    }
+
+    .navbar ul {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 5px 0px;
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: flex;
+        justify-content: center;
+        align-self: end;
+        color: #4A148C;
+    }
+
+    .mobile-nav-icon:hover+.navbar {
+        display: block;
+    }
+
+    .navbar:hover {
+        display: block;
+    }
+
+    .navbar li:hover {
+        transition: .1s ease;
+        padding: 5px 100%;
+        background-color: #FFDCEC;
+        
+    }
+
+    .customer-info {
+        width: min-content;
+    }
+
+    .book-img-info {
+        flex-direction: column;
+    }
+
+    .main-img-section {
+        width: 60%;
+    }
+
+    .small-img-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .purchase-section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

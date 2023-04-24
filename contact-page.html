@@ -1,0 +1,142 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Trung Kien
+ID: s3878260
+Acknowledgement: Lecture, Tutorial, www.w3schools.com, stackoverflow.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Books Store</title>
+    <link rel="icon" href="images/magic-book-close-2.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header">
+        <div class="icon-name">
+          <div class="icon">
+            <img id="close-book" src="images/magic-book-close.png" width="100px" height="100px" alt="Logo">
+          <div class="overlay">
+            <a href="home-page.html"><img src="images/magic-book.png" width="100px" height="100px" alt="Logo"></a>
+          </div>
+          </div>
+          <div id="store-name"> 
+            <h1>Magic Books Store</h1>
+          </div>
+        </div>
+        
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home-page.html">Home</a></li>
+            <li><a href="fiction.html">Fiction</a></li>
+            <li><a href="non-fiction.html">Non-Fiction</a></li>
+            <li><a href="contact-page.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+
+    
+    <main>
+      <!-- PAGE NAME -->
+      <div class="box contact-us">
+        <div class="line-1"></div>
+        <div class="custom-h2">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="line-2"></div>
+      </div>
+
+
+      <!-- FORM SECTION -->
+      <section>
+        <div class="form-section">
+          <form class="form" action="app/form-processing" method="get" target="_blank">
+            <label for="contact-purpose">Contact purpose: </label>
+            <select name="purpose" id="contact-purpose">
+              <option value="">--Please choose an option--</option>
+              <option value="sell-book">I want to sell books</option>
+              <option value="buy-book">I want to buy books</option>
+              <option value="error-report">There are some errors</option>
+              <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="customer-info">
+              <label for="name">Name: <input type="text" name="name" id="name"></label>
+              <br>
+              <br>
+              <label for="email">Email: <input type="text" name="email" id="email"></label>
+              <br>
+              <br>
+              <label for="phone">Phone: <input type="text" name="phone" id="phone"></label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <p>
+              Contact preference: 
+              <br>
+              <input type="checkbox" name="contact-preference" id="checkbox" value="by-email"/>By email
+              <br>
+              <input type="checkbox" name="contact-preference" id="checkbox" value="by-phone"/>By phone
+            </p>
+            <p>
+              Receive weekly newsletter: 
+              <br>
+              <input type="radio" name="weekly-newsletter" id="yes" value="yes">
+              <label for="yes">Yes</label>
+              <br>
+              <input type="radio" name="weekly-newsletter" id="no" value="no">
+              <label for="no">No</label>
+            </p>
+            <p>Note: </p>
+            <textarea name="note" id="note" cols=40 rows="10"></textarea>
+            <br>
+            <br>
+            <button class="submit-bt" type="submit">Submit</button>
+            
+          </form>
+          <a href="contact-page.html"><button class="reset-bt">Reset</button></a>
+        </div>
+      </section>
+    
+
+    </main>
+
+
+
+    <!-- RETURN HOME BUTTON -->
+    <a href="#store-name"><button id="return-bt">▲</button></a>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="contact-page.html">Contact Us</a></li>
+        </ul>
+         
+        <h4>© Copyright 2023 by Kien Le @ RMIT Vietnam</h4>
+      </nav>
+    </footer>
+
+  </body>
+
+</html>

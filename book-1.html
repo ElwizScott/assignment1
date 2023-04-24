@@ -1,0 +1,137 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Trung Kien
+ID: s3878260
+Acknowledgement: Lecture, Tutorial, www.w3schools.com, stackoverflow.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Books Store</title>
+    <link rel="icon" href="images/magic-book-close-2.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="header">
+        <div class="icon-name">
+          <div class="icon">
+            <img id="close-book" src="images/magic-book-close.png" width="100px" height="100px" alt="Logo">
+          <div class="overlay">
+            <a href="home-page.html"><img src="images/magic-book.png" width="100px" height="100px" alt="Logo"></a>
+          </div>
+          </div>
+          <div id="store-name"> 
+            <h1>Magic Books Store</h1>
+          </div>
+        </div>
+        
+        <div class="mobile-nav-icon">☰</div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home-page.html">Home</a></li>
+            <li><a href="fiction.html">Fiction</a></li>
+            <li><a href="non-fiction.html">Non-Fiction</a></li>
+            <li><a href="contact-page.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+
+    
+    <main>
+      <!-- BREADCRUMB SECTION -->
+      <section>
+        <div>
+          <p class="breadcrumb">
+            <a href="home-page.html">Home</a> 
+            >>
+            <a href="fiction.html">Fiction</a> 
+            >>
+            <a href="book-1.html">One Piece Vol.61</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- INFO SECTION -->
+      <section>
+        <div class="book-img-info">
+          <div class="main-img-section">
+            <img class="main-img" src="images/one-piece-vol-61.jpg" width="300px" height="400px" alt="one-piece-vol-61">
+          </div>
+          <div class="small-img-section">
+            <img class="small-img" src="images/one-piece-vol-61.jpg" width="90px" height="130px" alt="one-piece-vol-61">
+            <img class="small-img" src="images/book-1.1.jpg" width="90px" height="130px" alt="book-1.1">
+            <img class="small-img" src="images/book-1.2.jpg" width="90px" height="130px" alt="book-1.2">
+          </div>
+          <div class="purchase-section">
+            <ul class="book-info">
+              <li><u>5.0</u> ⭐⭐⭐⭐⭐ 
+              <li><u>53</u> Ratings</li>
+              <li><u>86</u> Sold</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <h6>Book price: $4.98</h6>
+            <button class="add-to-cart-bt">Add to cart 🛒</button>
+            <ul class="book-info">
+              <li>15 Days Return ✔️</li>
+              <li>100% Authentic ✔️</li>
+              <li>Free Shipping ✔️</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="category description-section">
+          <h5>Description</h5>
+          <p>
+            As a child, Monkey D. Luffy dreamed of becoming King of the Pirates. But his life changed when he accidentally gained the power to stretch like rubber...at the cost of never being able to swim again! Years, later, Luffy sets off in search of the “One Piece,” said to be the greatest treasure in the world...
+            <br>
+            <br>
+            Determined to become stronger and challenge the toughest seas in the world, Luffy and his crew decide to go into training. When they finally reunite years later, they will meet brand new enemies and adventures!
+          </p>
+          <ul class="description-info">
+            <li><b>Language: </b>English</li>
+            <li><b>Format: </b>Paperback | 208 pages</li>
+            <li><b>Author: </b>Eiichiro Oda</li>
+            <li><b>Publisher: </b>VIZ Media</li>
+            <li><b>Publication date: </b>03/06/2012</li>
+            <li><b>Series: </b>One Piece</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- RETURN HOME BUTTON -->
+    <a href="#store-name"><button id="return-bt">▲</button></a>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="contact-page.html">Contact Us</a></li>
+        </ul>
+         
+        <h4>© Copyright 2023 by Kien Le @ RMIT Vietnam</h4>
+      </nav>
+    </footer>
+
+  </body>
+
+</html>
